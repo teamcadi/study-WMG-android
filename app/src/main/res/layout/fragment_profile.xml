@@ -22,7 +22,7 @@
         android:layout_height="wrap_content">
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/iv_image"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:background="@drawable/profile"
@@ -58,7 +58,7 @@
         android:layout_marginTop="15dp"/>
 
     <ListView
-        android:id="@+id/listview"
+        android:id="@+id/profile_listview"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </LinearLayout>
