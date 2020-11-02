@@ -9,6 +9,7 @@ import android.os.Handler;
 import com.example.wordmemorizationgame.R;
 import com.example.wordmemorizationgame.ui.auth.AuthActivity;
 import com.example.wordmemorizationgame.ui.main.MainActivity;
+import com.example.wordmemorizationgame.ui.ranking.RankingActivity;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -26,7 +27,7 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void run() {
                 //
-                Intent intent = new Intent(getApplicationContext(), AuthActivity.class);
+                Intent intent = new Intent(getApplicationContext(), RankingActivity.class);
                 startActivity(intent);
                 finish();
             }
