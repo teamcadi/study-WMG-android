@@ -1,10 +1,13 @@
-package com.example.wordmemorizationgame;
+package com.example.wordmemorizationgame.ui.main;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+
+import com.example.wordmemorizationgame.R;
+import com.example.wordmemorizationgame.ui.main.MainActivity;
 
 public class SplashActivity extends AppCompatActivity {
 

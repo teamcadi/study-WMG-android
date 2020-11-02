@@ -1,8 +1,10 @@
-package com.example.wordmemorizationgame;
+package com.example.wordmemorizationgame.ui.main;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.wordmemorizationgame.R;
 
 public class MainActivity extends AppCompatActivity {
 
