@@ -1,4 +1,4 @@
-package com.example.wordmemorizationgame.ui.main;
+package com.example.wordmemorizationgame.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.os.Handler;
 
 import com.example.wordmemorizationgame.R;
+import com.example.wordmemorizationgame.ui.auth.AuthActivity;
 import com.example.wordmemorizationgame.ui.main.MainActivity;
 
 public class SplashActivity extends AppCompatActivity {
@@ -24,10 +25,15 @@ public class SplashActivity extends AppCompatActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                //
+                Intent intent = new Intent(getApplicationContext(), AuthActivity.class);
                 startActivity(intent);
                 finish();
             }
         }, 1500);
+    }
+
+    void isLogin() {
+        // 로직
     }
 }
