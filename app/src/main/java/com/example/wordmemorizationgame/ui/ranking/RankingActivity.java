@@ -1,4 +1,4 @@
-package com.example.wordmemorizationgame.ui.auth;
+package com.example.wordmemorizationgame.ui.ranking;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
@@ -10,21 +10,21 @@ import android.os.Bundle;
 
 import com.example.wordmemorizationgame.R;
 
-public class AuthActivity extends AppCompatActivity {
+public class RankingActivity extends AppCompatActivity {
     AppBarConfiguration appBarConfiguration;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_auth);
+        setContentView(R.layout.activity_ranking);
 
-        NavController navController = Navigation.findNavController(this, R.id.nav_auth_fragment);
+        NavController navController = Navigation.findNavController(this, R.id.nav_rank_fragment);
         appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
     }
 
     @Override
     public boolean onSupportNavigateUp() {
-        NavController navController = Navigation.findNavController(this, R.id.nav_auth_fragment);
+        NavController navController = Navigation.findNavController(this, R.id.nav_rank_fragment);
         return NavigationUI.navigateUp(navController, appBarConfiguration) || super.onSupportNavigateUp();
     }
 }

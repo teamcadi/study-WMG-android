@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_rank"
+    app:startDestination="@id/mainRankingFragment">
+
+    <fragment
+        android:id="@+id/favorRankingFragment"
+        android:name="com.example.wordmemorizationgame.ui.ranking.FavorRankingFragment"
+        android:label="fragment_main_ranking"
+        tools:layout="@layout/fragment_main_ranking" >
+        <action
+            android:id="@+id/action_favorRankingFragment_to_mainRankingFragment"
+            app:destination="@id/mainRankingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/wrongRankingFragment"
+        android:name="com.example.wordmemorizationgame.ui.ranking.WrongRankingFragment"
+        android:label="WrongRankingFragment" >
+        <action
+            android:id="@+id/action_wrongRankingFragment_to_mainRankingFragment"
+            app:destination="@id/mainRankingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainRankingFragment"
+        android:name="com.example.wordmemorizationgame.ui.ranking.MainRankingFragment"
+        android:label="MainRankingFragment" >
+        <action
+            android:id="@+id/action_mainRankingFragment_to_wrongRankingFragment"
+            app:destination="@id/wrongRankingFragment" />
+        <action
+            android:id="@+id/action_mainRankingFragment_to_favorRankingFragment"
+            app:destination="@id/favorRankingFragment" />
+    </fragment>
+</navigation>
