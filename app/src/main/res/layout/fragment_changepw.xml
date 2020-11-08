@@ -17,21 +17,21 @@
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/beforepw"
+        android:id="@+id/before_pw"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="이전 비밀번호"
         android:textSize="24sp" />
 
     <EditText
-        android:id="@+id/newpw"
+        android:id="@+id/new_pw"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="새 비밀번호"
         android:textSize="24sp"/>
 
     <EditText
-        android:id="@+id/identifypw"
+        android:id="@+id/identify_pw"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="새 비밀번호 확인"
