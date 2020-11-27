@@ -2,6 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
     android:orientation="vertical">
 
     <TextView
@@ -13,7 +15,7 @@
         android:text="비밀번호 변경"
         android:textAlignment="center"
         android:textColor="#010101"
-        android:textSize="30sp"
+        android:textSize="20sp"
         android:textStyle="bold" />
 
     <EditText
@@ -21,20 +23,27 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="이전 비밀번호"
-        android:textSize="24sp" />
+        android:textSize="18sp" />
 
     <EditText
         android:id="@+id/new_pw"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="새 비밀번호"
-        android:textSize="24sp"/>
+        android:textSize="18sp"/>
 
     <EditText
         android:id="@+id/identify_pw"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="새 비밀번호 확인"
-        android:textSize="24sp"/>
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/btn_finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="확인"
+        android:textSize="18sp"/>
 
 </LinearLayout>
