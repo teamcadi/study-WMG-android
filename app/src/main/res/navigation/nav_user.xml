@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_user"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_user"
     app:startDestination="@id/profileFragment">
 
     <fragment
         android:id="@+id/profileFragment"
         android:name="com.example.wordmemorizationgame.ui.user.ProfileFragment"
-        android:label="ProfileFragment" >
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile">
         <action
             android:id="@+id/action_profileFragment_to_changepwFragment"
             app:destination="@id/changepwFragment" />
@@ -14,9 +17,6 @@
     <fragment
         android:id="@+id/changepwFragment"
         android:name="com.example.wordmemorizationgame.ui.user.ChangepwFragment"
-        android:label="ChangepwFragment" >
-        <action
-            android:id="@+id/action_changepwFragment_to_profileFragment"
-            app:destination="@id/profileFragment" />
-    </fragment>
+        android:label="fragment_changepw"
+        tools:layout="@layout/fragment_changepw"/>
 </navigation>
