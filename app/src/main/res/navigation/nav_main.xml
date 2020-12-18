@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_user"
-    app:startDestination="@id/profileFragment">
+    app:startDestination="@id/myvocaFragment">
 
     <fragment
         android:id="@+id/profileFragment"
@@ -19,4 +19,9 @@
         android:name="com.example.wordmemorizationgame.ui.user.ChangepwFragment"
         android:label="fragment_changepw"
         tools:layout="@layout/fragment_changepw"/>
+    <fragment
+        android:id="@+id/myvocaFragment"
+        android:name="com.example.wordmemorizationgame.ui.voca.MyvocaFragment"
+        android:label="fragment_myvoca"
+        tools:layout="@layout/fragment_myvoca"/>
 </navigation>

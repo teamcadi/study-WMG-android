@@ -8,27 +8,9 @@
         android:enabled="true"/>
 
     <item
-        android:id="@+id/test2Fragment"
-        android:icon="@drawable/ic_military_tech_black_24dp"
-        android:title="랭킹"
-        android:enabled="true"/>
-
-    <item
-        android:id="@+id/test3Fragment"
-        android:icon="@drawable/ic_check_box_black_24dp"
-        android:title="퀴즈"
-        android:enabled="true"/>
-
-    <item
-        android:id="@+id/test4Fragment"
+        android:id="@+id/myvocaFragment"
         android:icon="@drawable/ic_menu_book_black_24dp"
         android:title="단어장"
-        android:enabled="true"/>
-
-    <item
-        android:id="@+id/profileFragment"
-        android:icon="@drawable/ic_person_black_24dp"
-        android:title="내 정보"
         android:enabled="true"/>
 
 </menu>
